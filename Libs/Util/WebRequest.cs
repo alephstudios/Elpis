@@ -45,7 +45,8 @@ namespace Util
 
         public static void SetProxy(string address, int port, string user = "", string password = "")
         {
-            ServicePointManager.Expect100Continue = false;
+//            ServicePointManager.Expect100Continue = false;
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;  // Required by the API (and cleaner than the above line)
             var p = new WebProxy(address, port);
            
             if (user != "")
@@ -61,8 +62,8 @@ namespace Util
                 wc.Proxy = _proxy;
 
             wc.Encoding = System.Text.Encoding.UTF8;
-            wc.Headers.Add("Content-Type", "text/plain; charset=utf8");
-            wc.Headers.Add("User-Agent", _userAgent);
+            wc.Headers.Add("Content-Type", "application/json; charset=utf8");
+//            wc.Headers.Add("User-Agent", _userAgent);  // Not required by the API
 
             string response = string.Empty;
             try
