@@ -133,7 +133,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="ReleaseData.cs" />
     <Compile Include="WebInterface.cs" />
     <Page Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
