@@ -1075,7 +1075,7 @@ namespace Elpis
                                                {
                                                    _updatePage = new UpdatePage(_update);
                                                    _updatePage.UpdateSelectionEvent += _updatePage_UpdateSelectionEvent;
-                                                   transitionControl.AddPage(_updatePage);
+                                                   //transitionControl.AddPage(_updatePage);
                                                    ShowPage(_updatePage);
                                                });
                     }
@@ -1090,7 +1090,7 @@ namespace Elpis
                         {
                             _updatePage = new UpdatePage(_update);
                             _updatePage.UpdateSelectionEvent += _updatePage_UpdateSelectionEvent;
-                            transitionControl.AddPage(_updatePage);
+                            //transitionControl.AddPage(_updatePage);
                             ShowPage(_updatePage);
                         });
                     }
