@@ -511,7 +511,7 @@ namespace PandoraSharp
             //req["returnStationList"] = true;
 
             req["partnerAuthToken"] = AuthToken;
-            req["syncTime"] = _syncTime;// AdjustedSyncTime();
+            req["syncTime"] = AdjustedSyncTime();
 
             ret = null;
 
