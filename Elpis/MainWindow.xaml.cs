@@ -140,10 +140,10 @@ namespace Elpis
 
         public void InitReleaseData()
         {
-//#if APP_RELEASE
+#if APP_RELEASE
             _bassRegEmail = ReleaseData.BassRegEmail;
             _bassRegKey = ReleaseData.BassRegKey;
-//#endif
+#endif
         }
 
         #endregion
@@ -287,7 +287,7 @@ namespace Elpis
             p.WriteOptionDescriptions(Console.Out);
         }
 
-        #region Setups
+#region Setups
 
         private void SetupLogging()
         {
@@ -1112,9 +1112,9 @@ namespace Elpis
             }
         }
 
-        #endregion
+#endregion
 
-        #region Misc Methods
+#region Misc Methods
         private bool IsOnPlaylist()
         {
             return (IsActive && CurrentPage == _playlistPage);
@@ -1226,7 +1226,7 @@ namespace Elpis
                 }
             }
         }
-        #endregion
+#endregion
 
         protected override void OnActivated(EventArgs e)
         {
@@ -1240,7 +1240,7 @@ namespace Elpis
             base.OnDeactivated(e);
         }
 
-        #region Event Handlers
+#region Event Handlers
 
         void mainBar_ErrorClicked()
         {
@@ -1743,7 +1743,7 @@ namespace Elpis
         }
 
 
-        #endregion
+#endregion
 
         private void MinimizeButton_Click(object sender, EventArgs e) => WindowState = WindowState.Minimized;
 
