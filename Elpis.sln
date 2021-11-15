@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elpis", "Elpis\Elpis.csproj", "{F19D43F0-5E7A-4B5C-A5D8-1B683218730B}"
 EndProject
@@ -160,6 +160,7 @@ Global
 		{DD7E8439-223A-4FE8-AFC8-869FF10E0E5D}.Release|Mixed Platforms.ActiveCfg = Release
 		{DD7E8439-223A-4FE8-AFC8-869FF10E0E5D}.Release|Mixed Platforms.Build.0 = Release
 		{DD7E8439-223A-4FE8-AFC8-869FF10E0E5D}.Release|x86.ActiveCfg = Release
+		{DD7E8439-223A-4FE8-AFC8-869FF10E0E5D}.Release|x86.Build.0 = Release
 		{B4B2C2FD-9FE7-48A9-BBC5-4D1FF1045E2A}.AppRelease|Any CPU.ActiveCfg = Release|x86
 		{B4B2C2FD-9FE7-48A9-BBC5-4D1FF1045E2A}.AppRelease|Mixed Platforms.ActiveCfg = Release|x86
 		{B4B2C2FD-9FE7-48A9-BBC5-4D1FF1045E2A}.AppRelease|Mixed Platforms.Build.0 = Release|x86
@@ -235,6 +236,7 @@ Global
 		{79DDD0CE-6F79-4212-A972-8618AD6E405F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{79DDD0CE-6F79-4212-A972-8618AD6E405F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{79DDD0CE-6F79-4212-A972-8618AD6E405F}.Release|x86.ActiveCfg = Release|Any CPU
+		{79DDD0CE-6F79-4212-A972-8618AD6E405F}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -250,5 +252,8 @@ Global
 		{19FB9DF6-5C82-439D-94C7-521E6EAF3FF3} = {CC987F15-1B4B-4F63-95F5-E2E554C11986}
 		{BA7F7E8A-B089-4323-8C8D-F406E7AFCDBE} = {CC987F15-1B4B-4F63-95F5-E2E554C11986}
 		{79DDD0CE-6F79-4212-A972-8618AD6E405F} = {CC987F15-1B4B-4F63-95F5-E2E554C11986}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B8F73C4E-E63C-4D2E-BDF3-79C20EE45AF0}
 	EndGlobalSection
 EndGlobal
