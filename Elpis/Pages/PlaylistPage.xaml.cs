@@ -178,7 +178,9 @@ namespace Elpis
                 String[] stat = txtStationName.Text.Split('-');
                 if (stat[0].Equals("Quick Mix"))
                 {
-                    txtStationName.Text = stat[0]+"-"+song.Station.Name;
+                    // For some reason it's possible to have stations that don't exist still present in the quick mix;
+                    // ignore those here.
+                    txtStationName.Text = stat[0]+"-"+song.Station?.Name ?? "<Unknown Station>";
                 }
             });
         }

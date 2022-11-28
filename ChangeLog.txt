@@ -2,6 +2,10 @@
 Before configuring your custom hotkeys on Elpis, do first kill all of the possible programs 
 that came with your keyboard drivers, like "Mouse and Keyboard Center" or "IType" from Microsoft keyboards.
 
+v1.6.2
+- Fixed crash when playing Quick Mix.
+- Fixed window size not saving properly when exiting while minimized.
+
 v1.6.1
 Release of account login fix from joecoolio's fork (https://github.com/joecoolio/Elpis)
 

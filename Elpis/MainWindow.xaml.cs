@@ -1587,8 +1587,7 @@ namespace Elpis
             if (_config != null)
             {
                 _config.Fields.Elpis_StartupLocation = new Point(this.Left, this.Top);
-                _config.Fields.Elpis_StartupSize = new Size(this.Width, this.Height);
-                if (_player != null)
+               if (_player != null)
                     _config.Fields.Elpis_Volume = _player.Volume;
                 _config.SaveConfig();
             }
@@ -1607,6 +1606,14 @@ namespace Elpis
                 this.Show();
                 ShowInTaskbar = true;
             }
+        }
+
+        private void Window_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            // Only save state when the window size is changing, so that we don't pick up
+            // an overly small size when exiting while the window is minimized and has a
+            // bogus size.
+            _config.Fields.Elpis_StartupSize = new Size(e.NewSize.Width, e.NewSize.Height);
         }
 
         public void LoadStation(string station)

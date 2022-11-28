@@ -24,7 +24,7 @@
         Icon="/Elpis;component/Images/main_icon.png" 
         Loaded="Window_Loaded" 
         Closing="Window_Closing"
-        StateChanged="Window_StateChanged">
+        StateChanged="Window_StateChanged" SizeChanged="Window_SizeChanged">
     <WindowChrome.WindowChrome>
         <WindowChrome 
         CaptionHeight="0"
